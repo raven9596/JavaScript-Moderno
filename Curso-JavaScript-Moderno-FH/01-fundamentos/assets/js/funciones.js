@@ -1,50 +1,45 @@
+function saludar(nombre) {
+  // console.log(arguments);
+  // console.log("Hola " + nombre);
+  return [1, 2];
 
-function saludar( nombre ) {
-    // console.log( arguments );
-    // console.log('Hola ' + nombre );
-    return [1,2];
-
-    // Esto nunca se va a ejecutar
-    console.log('Soy un código que está después del return');
+  // Esto nunca se va a ejecutar
+  console.log("Soy un codigo que esta despues del return");
 }
 
-const saludar2 = function( nombre ) {
-    console.log('Hola ' + nombre );
-}
+const saludar2 = function (nombre) {
+  console.log("Hola " + nombre);
+};
 
 const saludarFlecha = () => {
-    console.log('Hola Flecha');
-}
+  console.log("Hola Flecha");
+};
 
-const saludarFlecha2 = ( nombre ) => {
-    console.log('Hola ' + nombre );
-}
+const saludarFlecha2 = (nombre) => {
+  console.log("Hola " + nombre);
+};
 
+const retornoDeSaludar = saludar("Gilbert", 40, true, "Santo Domingo"); // 1
 
-
-const retornoDeSaludar = saludar( 'Fernando', 40, true, 'Costa Rica' ); // 1
-
-// saludar2( 'Fernando' );
+// saludar2("Gilbert");
 
 // saludarFlecha();
-// saludarFlecha2('Melissa');
+// saludarFlecha2("Vianka");
 
-function sumar( a, b ) {
-    return a + b;
+function sumar(a, b) {
+  return a + b;
 }
 
-// const sumar2 = (a,b) => {
-//     return a + b;
+// const sumar = (a, b) => {
+//   return a + b;
 // }
-const sumar2 = (a,b) => a + b;
 
-function getAleatorio() {
-    return Math.random();
+const sumar2 = (a, b) => a + b;
+
+function getAletorio() {
+  return Math.random();
 }
 
-// En una función de flecha, que no tenga llaves { }
-// getAleatorio2()
-const getAleatorio2 = () => Math.random();
+const getAletorio2 = () => Math.random();
 
-
-console.log(  getAleatorio2()   );
+console.log(getAletorio2());
